@@ -13,4 +13,9 @@ def remove_Es(a_string):
     remove_Es('abc')      # 'abc'
     """
     # Write your code here
-    pass
+    i = 0
+    new_str = []
+    for i in len(a_string):
+        if a_string[i] != 'e' or a_string[i] != 'E':
+            new_str += a_string[i]
+    return new_str
